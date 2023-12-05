@@ -1,10 +1,10 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link>
-    <router-link to="/">About</router-link>
-    <router-link to="/">Duplicate About Page</router-link>
-    <router-link to="/">Goto: Page 3</router-link>
-    <router-link to="/">Goto: Page 4</router-link>
+    <router-link to="">About</router-link>
+    <router-link to="">Duplicate About Page</router-link>
+    <router-link to="">Goto: Page 3</router-link>
+    <router-link to="">Goto: Page 4</router-link>
     <!-- <router-link to="/google" >Google Home</router-link> -->
     <!-- <router-link to="https://google.com">Google Home</router-link> -->
   </nav>
