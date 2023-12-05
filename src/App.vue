@@ -1,16 +1,41 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/about2">Duplicate About Page</router-link>
-    <router-link to="/page3">Goto: Page 3</router-link>
-    <router-link to="/page4">Goto: Page 4</router-link>
+    <router-link to="/">About</router-link>
+    <router-link to="/">Duplicate About Page</router-link>
+    <router-link to="/">Goto: Page 3</router-link>
+    <router-link to="/">Goto: Page 4</router-link>
     <!-- <router-link to="/google" >Google Home</router-link> -->
     <!-- <router-link to="https://google.com">Google Home</router-link> -->
   </nav>
 
   <router-view />
+
+  <component :is="Navigation"></component>
 </template>
+
+
+<script setup lang="ts">
+import { computed } from "vue";
+import { RouterView, useRoute } from "vue-router";
+import Navigation from './components/Reused/Navigation.vue';
+
+const route = useRoute();
+
+</script>
+
+<!-- <template>
+  <div id="root"
+       class="min-h-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex flex-col">
+    <component :is="layout">
+      <RouterView></RouterView>
+    </component>
+
+  </div>
+</template> -->
+
+
+
 
 <style>
 @import '@/assets/base.css';
